@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+
+  senstive-data-service:
+    image: sbdi/ala-senstive-data-service
+    build:
+      context: .
+      no_cache: true
+    environment:
+      - JAVA_OPTS=-Xmx1g -Xms128m -Xss256k
+    volumes:
+      - data_nameindex:/data/lucene/namematching
+    ports:
+      - 9189:9189
+
+volumes:
+  data_nameindex:
+    driver: local
+    driver_opts:
+      type: node
+      o: bind
+      device: "/data/lucene/namematching"
