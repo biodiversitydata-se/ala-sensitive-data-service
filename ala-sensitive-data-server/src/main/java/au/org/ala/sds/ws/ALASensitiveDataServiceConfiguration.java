@@ -33,10 +33,12 @@ public class ALASensitiveDataServiceConfiguration extends Configuration {
     public ALASensitiveDataServiceConfiguration()  {
         this.swagger.setTitle("ALA Sensitive Data API");
         this.swagger.setDescription("A sensitive data service that maps taxon, location and date information into ");
-        this.swagger.setContactUrl("https://ala.org.au");
-        this.swagger.setContactEmail("support@ala.org.au");
+        //this.swagger.setContactUrl("https://ala.org.au");
+        //this.swagger.setContactEmail("support@ala.org.au");
+        this.swagger.setTermsOfServiceUrl("https://docs.biodiversitydata.se/sbdi-data/sbdi-atlas-terms-of-use/");
         this.swagger.setResourcePackage(ConservationResource.class.getPackage().getName());
         this.swagger.setLicense("Mozilla Public Licence 1.1");
+        this.swagger.setLicenseUrl("https://www.mozilla.org/en-US/MPL/1.1/");
         this.swagger.setVersion("1.2");
         this.swagger.getSwaggerViewConfiguration().setPageTitle("ALA Sensitive Data API");
     }
