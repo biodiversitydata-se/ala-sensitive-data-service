@@ -23,7 +23,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Run build with maven
-        run: mvn clean package -pl '!ala-sensitive-data-tools' -Dmaven.test.skip
+        run: mvn clean package -Dmaven.test.skip
 
       - name: Upload war
         uses: actions/upload-artifact@v4
