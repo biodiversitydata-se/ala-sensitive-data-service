@@ -17,12 +17,8 @@ This application requires folder structure and config files that are also used b
 ```
 $ tree /data/sds/
 /data/sds/
-├── config
-│   ├── sds-config.properties -> /home/manash/projects/ala-sensitive-data-service/sbdi/data/sds/config/sds-config.properties
-├── sds-config.properties -> /home/manash/projects/ala-sensitive-data-service/sbdi/data/sds/legacy-sds-config.properties
-├── sensitive-species-data.xml -> /home/manash/projects/ala-sensitive-data-service/sbdi/data/sds/sensitive-species-data.xml
-├── sensitivity-categories.xml -> /home/manash/projects/ala-sensitive-data-service/sbdi/data/sds/sensitivity-categories.xml
-└── sensitivity-zones.xml -> /home/manash/projects/ala-sensitive-data-service/sbdi/data/sds/sensitivity-zones.xml
+└── config
+    └── sds-config.properties -> /home/manash/projects/ala-sensitive-data-service/sbdi/data/sds/config/sds-config.properties
 ```
 ### Index
 The service requires a taxonomic search index (Lucene) at /data/lucene/namematching

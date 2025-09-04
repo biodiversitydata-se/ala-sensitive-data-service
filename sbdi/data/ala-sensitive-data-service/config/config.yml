@@ -21,10 +21,10 @@ server:
       port: 9190
 conservation:
   index: /data/lucene/namematching
-  speciesUrl: file:///data/sds/sensitive-species-data.xml
-  zonesUrl: file:///data/sds/sensitivity-zones.xml
-  categoriesUrl: file:///data/sds/sensitivity-categories.xml
-  layersUrl: file:///data/sds/layers.json
+  speciesUrl: https://sds.biodiversitydata.se/sensitive-species-data.xml
+  zonesUrl: https://sds.biodiversitydata.se/sensitivity-zones.xml
+  categoriesUrl: https://sds.biodiversitydata.se/sensitivity-categories.xml
+  layersUrl: https://sds.biodiversitydata.se/ws/layers
   layersServiceUrl: https://spatial.biodiversitydata.se/ws
   cache:
     entryCapacity: 10000
